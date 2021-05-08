@@ -1,0 +1,7 @@
+#image1{
+    height: 266px;
+}
+.toro{
+    background-image: url("imagens/download.jpeg");
+    background-attachment: fixed;
+}
