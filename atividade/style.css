@@ -1,7 +1,64 @@
 #image1{
     height: 266px;
 }
-.toro{
+#paragrafos{
     background-image: url("imagens/download.jpeg");
     background-attachment: fixed;
+    background-repeat: repeat-y;
 }
+#cm{
+    background-color: rgb(86, 86, 177);  
+    width: 1cm;
+    height: 1cm;
+}
+#mm{
+    background-color: brown;
+    width: 1mm;
+    height: 1mm;
+}
+#in{
+    background-color: rgb(42, 165, 69);
+    width: 1in;
+    height: 1in;
+}
+#px{
+    background-color: rgb(91, 6, 102);
+    width: 10px;
+    height: 10px;
+}
+#pt{
+    background-color: rgb(91, 6, 102);
+    width: 10pt;
+    height: 10pt;
+}
+#pc{
+    background-color: rgb(91, 6, 102);
+    width: 1pc;
+    height: 1pc;
+}
+
+.container1{
+    width: 200px;
+    height: 100px;
+    background-color: brown;
+}
+.inside{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(42, 61, 165);
+}
+
+#container{
+    background-color: rgb(42, 61, 165);
+    color: white;
+    padding: 10px; /*expande a área da div e mantém o conteúdo*/
+}
+
+/*#container*/h1{
+    background-color: rgb(43, 43, 173);
+    color: white;
+    margin-top: 10px;
+    margin: 10px; /*expande por fora da div*/
+}
+
+/*em é relativo a font-size mesmo usando o width*/
