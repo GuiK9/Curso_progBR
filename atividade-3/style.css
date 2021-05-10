@@ -1,0 +1,13 @@
+p{
+    color: tomato;
+    text-align: justify;
+    text-transform: capitalize;
+    text-indent: 35px;
+    text-decoration: underline;
+    line-height: 1.2;
+    word-spacing: 12px;
+    text-shadow: 1px 1px rgba(197, 58, 58, 0.233);
+}
+/*a{
+    text-decoration: none;
+}*/
