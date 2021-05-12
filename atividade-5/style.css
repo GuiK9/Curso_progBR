@@ -1,0 +1,35 @@
+
+div{
+    margin-top: 25px;
+}
+#deb{
+    margin-top: 40px;
+}
+.links{  
+    text-decoration: none;
+    font-size: 3em;
+    color: rgb(0, 0, 0);
+    padding: 15px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border-radius: 15px;
+    border: 7px solid tomato;
+    
+}
+.links:hover{
+    background: tomato;
+    color: white;
+}
+.links:visited{
+    color: rgb(109, 104, 104);
+    border-color: rgb(109, 104, 104);
+    background-color: none;
+}
+/*.links:active{
+    background: tomato;
+    color: white;
+}
+
+.links:visited{
+    color: red;
+}*/
