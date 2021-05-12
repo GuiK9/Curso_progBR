@@ -1,0 +1,19 @@
+
+
+@font-face {
+    font-family: uma-fonte;
+    src: url(fonts/Catchland_PERSONAL_USE_ONLY.otf);
+}
+
+h1{
+    font-family: uma-fonte, Helvetica, sans-serif;
+    
+}
+p{
+    font-family: 'Girassol', cursive;
+    font-size: 1.7em;
+    font-variant: small-caps;
+}
+#kdm{
+    font-family: 'Girassol', cursive;
+}
