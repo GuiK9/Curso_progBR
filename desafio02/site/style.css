@@ -1,0 +1,35 @@
+body{
+    background-color: black;
+    font-family: 'Zilla Slab', serif;
+}
+section{
+    width: 700px;
+}
+div{
+    display: inline-block;
+}
+#fundo{
+    display: block;
+    font-size: 20px;
+    height: 348px;
+    background-image: url(../imagens/backgorund.png);
+}
+.image{
+    height: 50px;
+    margin-left: 50px;
+}
+#titulo{
+    padding: 9px;
+    padding-bottom: 0%;
+    margin-left: 10px;
+    height: 100px;
+    font-size: 40px;
+}
+.txt{
+    font-size: 1.7em;
+    margin-left: 10px;
+    text-align: center;
+}
+#conteudo{
+    display: inline-block;
+}
