@@ -1,0 +1,37 @@
+body{
+    margin: 0px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    background-color: rgb(0, 174, 255);
+}
+section{
+    font-size: 12px;
+    float: right;
+    width: 200px;
+}
+footer{
+    width: 100%;
+    background-color: blueviolet;
+    size: 1px;
+    margin-top: 330px;
+}
+.img{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: brown;
+}
+.footer-txt{
+    margin-top: 1px;
+    display: block;
+    width: 300px;
+    font-size: 15px;
+    text-align: center;
+}
+.par1{
+    margin-bottom: 12px;
+}
+.h2{
+    font-size: 1rem;
+}
