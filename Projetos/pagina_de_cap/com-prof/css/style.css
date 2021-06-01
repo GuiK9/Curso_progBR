@@ -7,7 +7,7 @@ body{
     background-color: black;
 }
 main{
-    width: max-content;
+    max-width: 862px;
     margin: auto;
 }
 .container{
@@ -62,4 +62,43 @@ select{
     background-image: url('/Projetos/pagina_de_cap/com-prof/images/arrow.jpg');
     background-repeat: no-repeat;
     background-position: calc(100% - 10px) center;
+}
+.picture{
+    width: 160px;
+}
+footer{
+    background-color: #202121;
+    padding: 40px;
+    text-align: center;
+}
+.description{
+    text-align: left;
+    display: inline-block;
+    color: white;
+    max-width: 40%;
+    margin-left: 40px;
+}
+.description p, .description h3 {
+    margin-bottom: 20px;
+}
+h3{
+    font-size: 24px;
+}
+@media screen and (max-width: 400px) {
+    .formContainer{
+        float: none;
+        max-width: 500px;
+    }
+    .description{
+        max-width: 90%;
+    }
+}
+@media screen and (max-width: 580px){
+    .formContainer{
+        float: none;
+        max-width: 500px;
+    }
+    .description{
+        max-width: 90%;
+    }
 }
