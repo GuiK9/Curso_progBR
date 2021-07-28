@@ -1,22 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        body{
+            background-color: cadetblue;
+        }
+    </style>
 </head>
 <body>
     <script>
         /* var a = 30
         a++
         a++
-        console.log(a) */
+        console.log(a) 
 
         var a = "scripte" // conta aquantidade de letras?
         var b = "script"
 
         console.log( a > b )
+
+        var idade = 247
+        var alimento = "sim"
+        
+        var c = alimento == "sim"
+        var d = idade >= 25
+
+        console.log("entrada", c && d)
+
+        var txt = "Texto aleatório"
+        var txt2 = "outro texto aleatório"
+        var n = Number("9") 
+        console.log(typeof n)
+
+        console.log(`primeiro eu tive um ${txt} e depois ${txt2}`)
+
+        var idade = 220
+
+        if (idade >= 18){
+            console.log("pode")
+        }
+        if (idade < 18) {
+            console.log("não pode")
+        }*/
+        
+        var carteira = 900
+        var cart_min = 1000
+        console.log((carteira > cart_min) ? "entrada permitida" : "entrada proibida")
     </script>
 </body>
 </html>
