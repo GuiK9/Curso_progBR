@@ -12,6 +12,7 @@
     </style>
 </head>
 <body>
+    <input type="button" value="media" id="button" onclick="media()">
     <script>
         /* var a = 30
         a++
@@ -91,7 +92,7 @@
     for (var i = 3; i <= numero; i++){
         console.log("executando o for, pela " + i + " vez")
     }
-    console.log("Acabou")*/
+    console.log("Acabou")
 
     var numero = Math.random() * 100
     
@@ -100,7 +101,31 @@
         numero = Math.random() *100
     }
     console.log("número " + numero)
-    console.log("Acabou") 
+    console.log("Acabou")
+
+
+    var alunos = ['igor', 'josé', 'marcos', 'thiago', 'gilherme', 'laryssa']
+     for (var i = 0; i < aluno.length; i++){
+        console.log(aluno[i])
+    } 
+    for (var i of alunos){
+        console.log(i)
+    }
+    
+    function media(n1, n2,){
+        var media = (n1 + n2) / 2
+        return media
+    }
+
+    var aluno1 = media(6, 7, 4)
+    console.log(aluno1)
+    
+    function saudacao(){
+        return "olá mundo!"
+    }
+    var s = saudacao
+
+    console.log(s())*/
 
     </script>
 </body>

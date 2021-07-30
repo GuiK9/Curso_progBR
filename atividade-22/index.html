@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>atividade 22</title>
+</head>
+<body>
+    <script>
+        var nomes = ["igor", "josé", "maria"]
+        var notasA = [7.0, 6.5, 9.5]
+        var notasB = [8.0, 7.0, 8.5]
+
+        function media(n1, n2){
+            return (n1 + n2) / 2
+        }
+        
+        for(var index in nomes){
+            var resultado_trat = media(notasA[index], notasB[index])
+
+            if ( resultado_trat < 7) {
+                var resultado = "reprovado"
+            }
+            else {
+                var resultado = "aprovado"
+            }
+            
+            console.log(`${nomes[index]} - ${notasA[index]} - ${notasB[index]} - ${media(notasA[index], notasB[index])} ${resultado}`)
+        }
+
+        
+    </script>
+</body>
+</html>
