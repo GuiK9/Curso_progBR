@@ -18,6 +18,6 @@ console.log(numero2)
 console.log(numero3)
 }
 
-let numero2 = 3
+let numero2 = 1
 
 console.log(numero2)
