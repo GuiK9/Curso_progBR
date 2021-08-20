@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+    <style>
+    #botao{
+        border-radius: 12%;
+        width: 150px;
+        height: 100px;
+        background-color: darkcyan;
+    }
+
+    </style>
+
+
+</head>
+<body onload="console.log('Página carregou')">
+    
+    <img src="https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.jOnCY9OgKVbM9oOx4-QNSQHaE8%26pid%3DApi&f=1" alt="meu-papel-de-parede">
+
+    <button id="botao" onmouseover="onM(this)" onmouseout="onO(this)">CLICK</button>
+    <p onmouseover="onM(this)" onmouseout="onO(this)">Texto para teste</p>
+    <script>
+        function onM(element) {
+            element.style.backgroundColor = "darkblue"
+        }
+
+        function onO(element) {
+            element.style.backgroundColor = "darkred"
+        }
+
+
+
+
+
+    </script>
+
+</body>
+</html>
