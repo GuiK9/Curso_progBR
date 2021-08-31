@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+   
+#titulo{
+    display: block;
+    position: relative;
+    text-align: center;
+    
+}
+#geral{
+    width: 300px;
+    margin: auto;
+    position: relative;
+    top: 50px;
+    padding: 20px;
+    background-color: rgb(203, 235, 235);
+    border-radius: 20px;
+}
+#conteudo{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: inline-block;
+}
+.input{
+    margin-top: 5px;
+    width: 250px;
+    height: 20px;
+}
+#button{
+    margin-top: 5px;
+    width: 70px;
+    height: 20px;
+    position: relative;    
+}
+.pr{
+    margin-top: 10px;
+}
