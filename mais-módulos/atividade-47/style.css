@@ -1,0 +1,20 @@
+input:focus {
+    color: red
+}
+
+li{
+    list-style-type: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+}
+
+
+li:nth-last-child(even){
+    background-color: beige;
+}
+
+li:nth-last-child(odd){
+    background-color: gray;
+    color: white;
+}
+/*pseudo calss seleciona um elemento de acordo com algo exterior ao elemento*/
