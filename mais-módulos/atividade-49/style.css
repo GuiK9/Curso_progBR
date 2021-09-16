@@ -1,0 +1,6 @@
+p{
+    width: 420px;
+    -webkit-transform: skew(30Deg, 30Deg) scale(0.7, 0.1);
+    -ms-transform: skew(30Deg, 30Deg) scale(0.7, 0.1) ;
+    transform: skew(30Deg, 30Deg) scale(0.7, 0.1);
+}
