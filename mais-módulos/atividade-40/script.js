@@ -17,5 +17,5 @@ function ande(){setInterval(function(){
 
     moverJogadorPara(xInicial++, yInicial++)
 
- }, 200)
+ }, 50)
 }
