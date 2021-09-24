@@ -1,0 +1,26 @@
+@keyframes changeColor {
+    0% {background-color: red; width: 100px;}
+    25%{background-color: green;}
+    50% {background-color: yellow; width: 400px;}
+    100%{background-color: blue; width: 100px;}
+
+}
+
+
+.box{
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    /* background-color: blue; */
+    animation-name: changeColor;
+    animation-duration: 3s;
+    animation-direction: reverse;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+}
+
+/* .box:hover{
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-delay: -1s;
+}  */

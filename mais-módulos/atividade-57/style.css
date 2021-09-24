@@ -1,0 +1,51 @@
+@keyframes changeColor {
+    0% {background-color: red; width: 100px;}
+    25%{background-color: green;}
+    50% {background-color: yellow; width: 700px;}
+    100%{background-color: blue; width: 100px;}
+
+}
+ 
+
+
+/* @keyframes move {
+    0%{left: 0px;}
+    100%{left: 300px;}
+} */
+
+
+
+
+
+
+
+.box{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-style: solid;
+    animation: changeColor 3s linear 0s 1 normal forwards;
+}
+
+/* .box:hover{
+    animation-name: changeColor;
+    animation-duration: 5s;
+    animation-delay: -1s;
+}  */
+
+
+.div1{
+    animation-timing-function: linear;
+}
+.div2{
+    animation-timing-function: ease;
+}
+.div3{
+    animation-timing-function: ease-in;
+}
+.div4{
+    animation-timing-function: ease-out;
+}
+.div5{
+    animation-timing-function: ease-in-out;
+}
