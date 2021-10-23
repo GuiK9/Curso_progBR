@@ -19,6 +19,6 @@ let cat = {
 dog.speak()
 cat.speak()
 
-let bindedfunction = speakGeneric.bind(dog) //dá um contexto pro diz
+let bindedfunction = speakGeneric.bind(dog) //dá um contexto pro this
 
 bindedfunction()
