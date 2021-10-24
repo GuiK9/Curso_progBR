@@ -26,7 +26,11 @@ function listarUsuarios() {
     console.log(usuarios)
 }
 
-inserirUsuario("Guilhemre").then(listarUsuarios)
+inserirUsuario("Guilhemre")
+    .then(listarUsuarios)
+    .catch((error) => {
+        console.log(error.msg)
+    })
 
 
 
