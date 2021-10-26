@@ -26,4 +26,3 @@ function nomeIdade(aluno) {
 } */
 
 console.log(alunos.map(AlunoDaquiA5Anos)) //mapeei o array principal e retornei um novo array
-console.log(alunos)

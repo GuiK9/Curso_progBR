@@ -1,8 +1,5 @@
 //high order function, filter
 
-//revisar funções javascript
-
-
 function novoAluno(nome, idade) {
     return {nome, idade}
 }
@@ -28,7 +25,7 @@ function temMaisDe30(aluno) {
     return aluno.idade > 30 //vai retornar boolean
 }
 
-/*  function filtro(callback){
+function filtro(callback){
 
     let alunosFiltrados = [] 
 
@@ -45,9 +42,9 @@ function temMaisDe30(aluno) {
 
 alunos.filtro = filtro
 
-jogadores.filtro = filtro */
+jogadores.filtro = filtro 
 
-console.log(jogadores.filter(temMenosDe30))
+console.log(jogadores.filtro(temMenosDe30))
 
 
 
