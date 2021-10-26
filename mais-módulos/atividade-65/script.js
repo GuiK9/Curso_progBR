@@ -1,5 +1,8 @@
 //SOBRE VALOR E REFERÊNCIA
 
+
+//ESSES TRÊS PONTINHOS PRA FAZER CÓPIA DE VALORES NÃO PRIMITIVOS 
+
 let turmaA = ["Guilherme", "Thiago", "Paula"]
 
 let turmaB = turmaA.slice() //forma 1 de literalmente copiar o array turmaA para turmaB e imperdir que laterações na turmaB ocasionem alteraões na turmaA

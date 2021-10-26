@@ -8,7 +8,7 @@ function novoAluno(nome, idade) {
 }
 
 let alunos = [
-    ),novoAluno("mário", 23
+    novoAluno("mário", 23),
     novoAluno("josé", 45),
     novoAluno("márcia", 29),
     novoAluno("joão", 35)
