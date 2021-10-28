@@ -25,7 +25,10 @@ function temMaisDe30(aluno) {
     return aluno.idade > 30 //vai retornar boolean
 }
 
-function filtro(callback){
+
+console.log(jogadores.filter(temMenosDe30))
+
+/* function filtro(callback){
 
     let alunosFiltrados = [] 
 
@@ -42,9 +45,9 @@ function filtro(callback){
 
 alunos.filtro = filtro
 
-jogadores.filtro = filtro 
+jogadores.filtro = filtro  */
 
-console.log(jogadores.filtro(temMenosDe30))
+
 
 
 
