@@ -10,15 +10,14 @@ h1{
 .square{
     width: 100px;
     height: 100px;
-    background-color: beige;
-    border: 1px solid black;
+    background-color: rgb(125, 226, 252);
     display: inline-block;
 }
 
-.o{
+.Escudo{
     position: relative;
 }
-.o::after{
+.Escudo::after{
     position: absolute;
     content: "\1F6E1";
     font-size: 50px;
@@ -29,10 +28,10 @@ h1{
     right: 0;
 
 }
-.x{
+.Espada{
     position: relative;
 }
-.x::after{
+.Espada::after{
     position: absolute;
     content: "\2694";
     font-size: 50px;
@@ -41,5 +40,18 @@ h1{
     bottom: 0;
     left: 0;
     right: 0;
+}
 
+#rj {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(0, 0, 255);
+    border-radius: 20px;
+    height: 30px;
+    width: 100px;
+}
+#rj:hover {
+    background-color: rgb(16, 16, 129);
+    transition: 200ms;
 }
