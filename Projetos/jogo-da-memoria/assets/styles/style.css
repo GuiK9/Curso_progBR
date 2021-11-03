@@ -1,4 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body{
     font-family: Righteous, sans-serif;
 }
@@ -36,4 +43,28 @@ body{
 .card_back{
     color: #101c2c;
     background-color: #05c3ff;
+}
+
+
+#gameOver{
+    color: white;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    font-size: 50px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#restart{
+    padding: 20px;
+    font-size: 20px;
+    background-color: yellow;
+    border: none;
+    border-radius: 20px;
+    margin-top: 20px;
 }
