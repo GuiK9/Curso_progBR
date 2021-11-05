@@ -16,22 +16,22 @@ var aluno1 = {
 }
 
 var alunos = [aluno, aluno1]
-/* console.log(alunos) */
+
 
 var [marcos, joao, ] = alunos
-console.log(nome)
-console.log(nome)
 
-/* var {nome, ...copia} = aluno
+
+ var {nome, ...copia} = aluno
 copia.matricula = 654321
 console.log(copia)
-console.log(nome) */
+console.log(nome)
+console.log(aluno)
 
 //forma interessante de se trabalhar com vários obj
 
 
-/* var {matrícula, nome, numero} = aluno
-console.log(matrícula)
+ var {matrícula, nome, numero} = aluno
+/* console.log(matrícula)
 console.log(nome)
-console.log(numero) */
-
+console.log(numero) 
+ */
