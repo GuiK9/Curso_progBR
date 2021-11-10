@@ -4,11 +4,6 @@ let game = {
     firstCard: null,
     secondCard: null,
 
-    unsetCard: function (){
-        this.firstCard = null
-        this.secondCard = null
-    },
-
     setCard: function (id) {
         let card = this.cards.filter(card => card.id === id)[0]
 
@@ -16,7 +11,7 @@ let game = {
             return false
         }
 
-        if (this.firstCard === null) {
+        if (this.firstCard == null) {
             this.firstCard = card
             return true
         } else {
@@ -27,12 +22,17 @@ let game = {
     },
 
     checkMatch: function () {
-        return this.firstCard.icon === this.secondCard.icon
+        if (this.secondCard != null) {
+            let teste = this.firstCard.icon == this.secondCard.icon
+            return teste
+        } else {
+            return false
+        }
     },
 
     clearCards: function () {
         this.firstCard = null
-        this.secondeCard = null
+        this.secondCard = null
         this.lockMode = false
     },
 
@@ -93,4 +93,3 @@ let game = {
         }
     }
 }
-

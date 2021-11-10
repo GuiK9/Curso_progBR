@@ -59,14 +59,15 @@ body {
 }
 
 #gameOver {
+    display: flex;
     color: white;
     position: absolute;
     top: 0;
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.9);
     font-size: 50px;
-    display: none;
+    visibility: hidden;
     justify-content: center;
     align-items: center;
     flex-direction: column;
