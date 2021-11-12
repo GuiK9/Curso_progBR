@@ -61,6 +61,8 @@ function flipCard() {
             setTimeout(() => {
                 let fistCardView = document.getElementById(game.firstCard.id)
                 let secondCardView = document.getElementById(game.secondCard.id)
+                
+                game.unflipCards()
 
                 fistCardView.classList.remove('flip')
                 secondCardView.classList.remove('flip')

@@ -13,9 +13,11 @@ let game = {
 
         if (this.firstCard == null) {
             this.firstCard = card
+            this.firstCard.flipped = true
             return true
         } else {
             this.secondCard = card
+            this.secondCard.flipped = true
             this.lockMode = true
             return true
         }
@@ -74,6 +76,11 @@ let game = {
                 flipped: false,
             },
         ];
+    },
+
+    unflipCards: function() {
+        this.firstCard.flipped = false
+        this.secondCard.flipped = false
     },
 
     createIdWithech: function (tech) {
