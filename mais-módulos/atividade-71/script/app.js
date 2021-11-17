@@ -37,6 +37,7 @@ docref.get().then((doc) => {
 //aparentemente cda back end terão seus métodos e particularidades próprias
 db.collection("turma").where("notas.nota1", ">", 8).get().then(snapshot => {
     snapshot.forEach(doc => {
+        console.table(doc.data())
         let aluno = doc.data() 
         console.log(aluno.nome, aluno.sobrenome)
     })
