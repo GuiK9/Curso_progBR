@@ -33,8 +33,8 @@ function escrever(){
 }
 
 function logIn() {
-    let userEmail = "novoteste@teste.com"
-    let userPassword = "abc123" //LOCAL é o browser (tbm é padrão)/ SESSION apenas na aba / NONE caso atualize a página ja n estará logado  
+    let userEmail = "teste@teste.com"
+    let userPassword = "123abc" //LOCAL é o browser (tbm é padrão)/ SESSION apenas na aba / NONE caso atualize a página ja n estará logado  
 
     auth.setPersistence(firebase.auth.Auth.Persistence.NONE).then(() =>{
         auth.signInWithEmailAndPassword(userEmail, userPassword).then(loggedUser => {
