@@ -2,7 +2,7 @@ let fs = require('fs') //filesystem
 
 
 
-/* fs.readFile('testado.txt', 'UTF8', (err, data) => {
+/* fs.readFile('testado.txt', 'UTF8', (err, data) => { //lê arquivos
     if(err) { throw err }
     console.log(data)
 }) */
