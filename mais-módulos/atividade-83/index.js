@@ -8,6 +8,7 @@ const parse = require('url-parse')
 function handleFile(req, res, callback) {
 
     let fileName = `.${path}`
+    console.log(path)
 
     if (path == '' && path == "/") {
         path = "/index.html"
