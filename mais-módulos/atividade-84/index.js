@@ -36,12 +36,16 @@ function handleFile(req, res, callback) {
 function handleRequest(req, res) {
 
     let path = parse(req.url).pathname
-    
+    let method = req.method
 
-    if (path == '/teste.html') {
-        res.writeHead(200, { "Content-Type": "Text/html" })
+    console.log(method)
+
+    if(method == 'PUT'){
+        res.writeHead(404, {"Content-Type":"Text/html;charset=UTF8"})
+    }
+
+    if (path == '/teste') {
         res.write("teste")
-        res.end()
         return true
     }
 
