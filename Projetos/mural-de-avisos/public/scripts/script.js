@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 })
 
 function updatePosts() {
-    fetch("http://localhost:3000/api/all").then(resp => {
+    fetch("http://192.168.0.9:3000/api/all").then(resp => {
         return resp.json()
     }).then(json => {
 
@@ -12,7 +12,6 @@ function updatePosts() {
 
         let posts = JSON.parse(json)
         posts.forEach(post => {
-            console.log(post)
             let postElement = `
             <div id = ${post.id} class="card mb-4">
                 <div class="card-header">
@@ -30,5 +29,26 @@ function updatePosts() {
 }
 
 function newPost() {
+    let title = document.getElementById("title").value
+    let description = document.getElementById("description").value
 
+    let post = {
+        title,
+        description
+    }
+
+    const options = {
+        method: "POST",
+        headers: new Headers({
+            "content-Type": "application/json"
+        }),
+        body: JSON.stringify(post)
+    }
+
+    fetch("http://192.168.0.9:3000/api/new", options).then(res => {
+        console.log(res)
+        updatePosts()
+        document.getElementById("title").value = ""
+        document.getElementById("description").value = ""
+    })
 }

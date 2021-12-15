@@ -1,9 +1,5 @@
 module.exports = {
-    posts: [{
-        id: "lsdkfakjg",
-        title: "teste title",
-        description: "teste description"
-    }],
+    posts: [],
 
     getAll() {
         return this.posts
