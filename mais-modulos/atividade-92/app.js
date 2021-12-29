@@ -13,9 +13,9 @@ const LinkSchema = new mongoose.Schema({
 const Link = mongoose.model('Link', LinkSchema)
 
 let link = new Link({
-    title: "MDN",
-    description: "Links para o MDN",
-    url: "https://developer.mozilla.org/pt-BR/",
+    title: "instagram",
+    description: "Link para o instagram",
+    url: "https://instagram.com",
     click: 0
 
 })
