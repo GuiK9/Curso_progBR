@@ -1,13 +1,14 @@
 const Link = require('../models/Link.js')
 
-const redirect = async (req, res) => {
+const redirect = async (req, res, next) => {
     let title = req.params.title
     try{
-        let docs = await Link.findOne({title})
-        console.log(docs)
-        console.log(docs.url)
-        res.redirect(docs.url)
-
+        let doc = await Link.findOne({title})
+        if(doc){
+            res.redirect(doc.url)
+        } else {
+            next()
+        }
     } catch(err) {
 
         res.send(err)
@@ -27,5 +28,16 @@ const addLink = async(req, res) => {
 
 }
 
+const allLinks = async (req, res) => {
+    
+    try{
+        let links = await Link.find({})
+        res.render('all', {links})
+    } catch (err) {
+        res.send(err)
+    }
 
-module.exports = {redirect, addLink}
+}
+
+
+module.exports = {redirect, addLink, allLinks}
