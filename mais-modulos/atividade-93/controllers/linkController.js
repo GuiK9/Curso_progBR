@@ -3,7 +3,6 @@ const Link = require('../models/Link.js')
 const redirect = async (req, res) => {
     let title = req.params.title
     try{
-
         let docs = await Link.findOne({title})
         console.log(docs)
         console.log(docs.url)
@@ -20,7 +19,7 @@ const addLink = async(req, res) => {
     
     try{
         let doc = await link.save()
-        res.send(doc)
+        res.send("Link Adicionado com sucesso")
     } catch (err) {
         res.send(err)
     }
