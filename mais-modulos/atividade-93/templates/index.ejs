@@ -7,13 +7,17 @@
     <title>Redirection</title>
 </head>
 <body>
-    <h1>Olá</h1>
-
     <form action="/" method="POST">
-        <input class="field" name="title" placeholder="Title" required>
-        <input class="field" name="description" placeholder="Description">
-        <input class="field" name="url" placeholder="URL" required>
+        <input class="field" name="title" placeholder="Title" value="<%=body.title%>">
+        <input class="field" name="description" placeholder="Description" value="<%=body.description%>">
+        <input class="field" name="url" placeholder="URL" value="<%=body.url%>">
         <button>Salvar</button>
     </form>
+
+    <%if(err){%>
+        <h3><%=err.message%></h3>
+    <%}%>
+
+
 </body>
 </html>

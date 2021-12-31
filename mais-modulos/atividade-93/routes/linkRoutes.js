@@ -8,7 +8,7 @@ const linkController = require('../controllers/linkController')
 router.get('/:title', linkController.redirect)
 
 router.get("/", (req, res) => {
-    res.render('index')
+    res.render('index', {err: false, body: {}})
 })
 
 router.post('/', express.urlencoded({extended: true}), linkController.addLink)
