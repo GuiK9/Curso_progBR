@@ -9,6 +9,9 @@
 </head>
 
 <body>
+
+    <h1>links</h1>
+    <a href="/add">adicionar link</a>
     <% for (let i=0; i < links.length; i++) {%>
         <div id="<%=links[i]._id%>">
             <form action="/?_method=DELETE" method="POST">
@@ -23,6 +26,7 @@
                 </div>
                 <input type="text" name="id" value="<%=links[i]._id%>" hidden>
                 <button type='submit'>Delete</button>
+                <a href="/edit/<%=links[i]._id%>">Edit</a>
             </form>
         </div>
         <% } %>

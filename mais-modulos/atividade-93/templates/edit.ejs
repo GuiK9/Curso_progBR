@@ -7,12 +7,12 @@
     <title>Redirection</title>
 </head>
 <body>
-    <h1>Add link</h1>
-    <form action="/" method="POST">
+    <h1> Update link link</h1>
+    <form action="/edit/<%=body.id%>" method="POST">
         <input class="field" name="title" placeholder="Title" value="<%=body.title%>">
         <input class="field" name="description" placeholder="Description" value="<%=body.description%>">
         <input class="field" name="url" placeholder="URL" value="<%=body.url%>">
-        <button>Add</button>
+        <button>Update</button>
     </form>
 
     <%if(err){%>
