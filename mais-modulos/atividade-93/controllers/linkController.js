@@ -22,7 +22,7 @@ const addLink = async (req, res) => {
         res.redirect("/")
     } catch (err) {
         console.log(req.body)
-        res.render('index', { err, body: req.body })
+        res.render('add', { err, body: req.body })
     }
 
 }
