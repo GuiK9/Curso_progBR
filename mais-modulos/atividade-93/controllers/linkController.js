@@ -116,7 +116,7 @@ const editLink = async (req, res) => {
 }
 
 const redirectEdit = async (req, res) => {
-    res.send("aloha bitch")
+    res.redirect('/')
 }
 
 module.exports = { redirect, addLink, allLinks, deleteLink, loadLink, editLink, redirectEdit }

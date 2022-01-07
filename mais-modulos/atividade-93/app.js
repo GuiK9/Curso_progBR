@@ -3,7 +3,7 @@ const app = express()
 const mongoose = require('mongoose')
 const path = require('path')
 const PORT = 3000
-const linkrouter = require('./routes/linkRoutes')
+const linkRouter = require('./routes/linkRoutes')
 
 
 mongoose.connect('mongodb://127.0.0.1:27017/links')
@@ -16,7 +16,7 @@ db.once("open", () => { console.log("Banco carregado") })
 app.set('view engine', 'ejs')
 app.set('views', path.join(__dirname, 'templates'))
 
-app.use('/', linkrouter)
+app.use('/', linkRouter)
 
 
 
