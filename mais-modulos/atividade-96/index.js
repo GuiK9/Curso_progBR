@@ -19,9 +19,9 @@ const io = socketIO(server)
 io.on('connection', (socket) => {
     console.log("new connection")
 
-    console.log(io.engine.clientsCount)
+    socket.emit("update_messages", messages)
 
-    socket.on('new_message', (data)=>{
+    socket.on('new_message', (data) => {
         messages.push(data.msg)
         io.emit("update_messages", messages)
     })
