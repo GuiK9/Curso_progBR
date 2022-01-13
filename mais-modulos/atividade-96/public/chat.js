@@ -1,17 +1,22 @@
-const socket = io('http://localhost:3000')
+const room = window.location.pathname.replace(/\//g, '')
+const socket = io(`http://localhost:3000/${room}`)
 
-socket.on("update_messages", (messages) =>{
+console.log(socket)
+
+let user
+
+socket.on("update_messages", (messages) => {
     updateMessagesOnScream(messages)
 })
 
 
 function updateMessagesOnScream(messages) {
-    console.log(messages)
+
     const div_messages = document.querySelector('#messages')
 
-    let list_messages = '<ul>' 
+    let list_messages = '<ul>'
     messages.forEach(message => {
-        list_messages += `<li>${message}</li>`
+        list_messages += `<li>${message.user}: ${message.msg}</li>`
     });
     list_messages += '</ul>'
 
@@ -25,8 +30,20 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', (e) => {
         e.preventDefault()
 
+        if(!user) {
+            alert('defina um usuário')
+            return
+        }
         const message = document.forms['message_form_name']['msg'].value
         document.forms['message_form_name']['msg'].value = ''
-        socket.emit('new_message', {msg: message})
+        socket.emit('new_message', { user:user, msg: message })
     })
+
+    const userForm = document.querySelector('#user_form')
+    userForm.addEventListener('submit', (e) => {
+        e.preventDefault()
+        user = document.forms['user_form_name']['user'].value
+        userForm.parentNode.removeChild(userForm)
+    })
+
 })
