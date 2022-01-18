@@ -1,17 +1,28 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 
 
 
 function Counter(props) {
 
     const [count, setCount] = useState(props.count)
-    const [meuEstado, setMeuEstado] = useState('qualquer coisa')
 
-    function add(){
+    useEffect(() => {
+        setCount(Number(localStorage.getItem("count")))
 
+        return() => {
+            console.log("Não tem mais contador")
+        }
+
+
+     }, [])
+
+    useEffect(() => {
+        document.title = count
+        localStorage.setItem("count", count)
+    }, [count])
+
+    function add() {
         setCount(count + 1)
-        console.log('atualizar')
-        console.log(meuEstado)
     }
 
     return (
