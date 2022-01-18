@@ -6,8 +6,7 @@ import Counter from './Counter.js'
 function App() {
   return(
     <div>
-    <Header name='Guilherme' links={["Sobre", "Comprar", "Contato"]}></Header>
-    <Counter count={5}></Counter>
+    <Counter count={1}></Counter>
     </div>
   )
 }
