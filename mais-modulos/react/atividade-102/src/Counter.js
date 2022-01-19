@@ -1,20 +1,16 @@
 import React, { useEffect, useState } from 'react'
 
-
-
 function Counter(props) {
 
     const [count, setCount] = useState(props.count)
 
     useEffect(() => {
         setCount(Number(localStorage.getItem("count")))
-
-        return() => {
+        
+        return () => {
             console.log("Não tem mais contador")
-        }
-
-
-     }, [])
+        } //aparentemente o return poderia estar em qualquer useEffect que iria funcionar como unmount
+    }, [])
 
     useEffect(() => {
         document.title = count
@@ -33,7 +29,7 @@ function Counter(props) {
     )
 }
 
-/* class Counter extends React.Component {
+/*class Counter extends React.Component {
 
     constructor(props) {
         super(props)
@@ -61,10 +57,10 @@ function Counter(props) {
     }
 
     componentWillUnmount(){
-        
+        console.log("flag")
     }
 
-    /* shouldComponentUpdate(){
+    shouldComponentUpdate(){
         return false
     } 
 
