@@ -8,3 +8,8 @@ body {
   margin: auto;
   max-width: 900px;
 }
+
+.img-delete{
+  margin-left: 1px;
+  width: 15px;
+}
