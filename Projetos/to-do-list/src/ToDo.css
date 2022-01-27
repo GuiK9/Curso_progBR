@@ -6,10 +6,42 @@ body {
 
 .container{
   margin: auto;
-  max-width: 900px;
+  max-width: 600px;
 }
 
 .img-delete{
-  margin-left: 1px;
-  width: 15px;
+  position: relative;
+  top: 2px;
+  height: 30px;
+}
+
+.undone{
+  position: relative;
+  top: 2px;
+  height: 30px;
+}
+.done{
+  position: relative;
+  top: 2px;
+  height: 30px;
+}
+.done-li{
+  text-decoration: line-through;
+}
+
+ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 30px;
+  width: 100%;
+  margin-top: 15px;
+  padding: 15px;
+  box-shadow: 0 2px 7px 1px rgba(0, 0, 0, 0.2);
 }
