@@ -29,8 +29,16 @@ function Todo() {
 
     function onAddItem(text) {
         let it = new Item(text)
-        localStorage.setItem(SAVED_ITEMS, JSON.stringify(items))
+        let savedItems = JSON.parse(localStorage.getItem(SAVED_ITEMS))
+
+
+        if(savedItems.length !== 0 ){
+            let lasItemLocalStorage = savedItems[savedItems.length -1]
+            it.id = lasItemLocalStorage.id+1
+        }
+
         setItems([...items, it])
+        localStorage.setItem(SAVED_ITEMS, JSON.stringify(items))
         onHideModal()
 
     }
