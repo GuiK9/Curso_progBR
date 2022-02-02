@@ -1,19 +1,9 @@
-import React, { useState } from 'react'
-
+import React, { useContext } from 'react'
+import { ContadorContexto } from '../ContadorContexto'
 
 function Contador(props){
 
-    const [contagem, setcontagem] = useState(0)
-
-    function maisUm(){
-        let novoNumero = contagem + 1
-        setcontagem(novoNumero)
-    }
-
-    function menosUm(){
-        let novoNumero = contagem - 1
-        setcontagem(novoNumero)
-    }
+    const [contagem, setcontagem] = useContext(ContadorContexto)
 
     return (
         <div>
