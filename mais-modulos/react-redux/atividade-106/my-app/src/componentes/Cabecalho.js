@@ -3,7 +3,7 @@ import {useSelector} from 'react-redux'
 
 function Cabecalho(props) {
 
-    const contador = useSelector((state) => { return state })
+    const contador = useSelector((state) => { return state.counter })
 
     return(
         <div className="cabecalho">

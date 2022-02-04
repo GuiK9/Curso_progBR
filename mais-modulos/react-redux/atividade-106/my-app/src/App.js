@@ -2,13 +2,14 @@ import React from 'react';
 import './App.css';
 import Contador from './componentes/Contador';
 import Cabecalho from './componentes/Cabecalho';
-import {createStore} from 'redux'
+import { createStore, combineReducers } from 'redux'
 import contadorReducer from './reducers/contadorReducer';
 import { Provider } from 'react-redux'
 
 function App() {
-
-  const store = createStore(contadorReducer)
+  
+  const allReducers = combineReducers({ counter: contadorReducer })
+  const store = createStore(allReducers)
 
 
   return (

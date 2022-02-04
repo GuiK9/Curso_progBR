@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from 'react-redux'
 function Contador(props) {
 
 
-    const contador = useSelector((state) => { return state })
+    const contador = useSelector((state) => { return state.counter })
     const dispatch = useDispatch()
 
     return (
