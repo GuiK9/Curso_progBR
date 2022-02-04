@@ -1,0 +1,22 @@
+action - ação que a gente precisa mandar pro nosso reducer executar; o que o reducer vai fazer
+
+dispach - meio de campo entre o reducer e a ação; ele transmite de um para o  outro 
+
+reducer - responsvel por manipular o estado de fato; gera um novo estado e manda o estado modificado
+ 
+state - é o estado da aplicação propiamente dito
+
+
+restaurante
+
+action - define o pedido, esse pedido pode ir pro caixa ou para a cozinha
+
+  -complexa: garçom quero um prato, qual deles? 
+
+    -tipo ou carga (payload): {qunatidade: 2, tipo: hamburguer,}
+
+dispatch - garçom que leva e traz o pedido, para o caixa ou para a cozinha
+
+reducer - quem recebe o pedido, o caixa ou a cozinha
+
+state - a resposta do pedido, recibo da compra ou a comida 
