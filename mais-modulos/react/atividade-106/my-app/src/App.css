@@ -1,0 +1,12 @@
+.cabecalho{
+    font-size: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.App{
+    width: 80%;
+    padding: 40px;
+}
