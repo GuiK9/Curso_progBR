@@ -1,16 +1,49 @@
 import React, { useEffect, useState } from "react";
 import List from './components/List'
 import TodoForm from './components/TodoForm'
-import Item from './components/Item'
 import Modal from "./components/Modal";
 
-const SAVED_ITEMS = "savedItems"
-function Todo() {
+import { createStore } from 'redux'
+import { Provider } from 'react-redux'
+
+import listReducer from "./reducers/listReducer";
+
+const store = createStore(listReducer)
+
+
+function app() {
 
     const [showModal, setShowModal] = useState(false)
-    const [items, setItems] = useState([])
 
 
+    function onHideModal(e) {
+        setShowModal(false)
+    }
+
+
+    return (
+        <Provider store={store}>
+            <div className="container">
+                <header className="header">
+                    <h1>Todo</h1>
+                    <button className="add-button" onClick={() => setShowModal(true)}>+</button>
+                </header>
+                <List></List>
+                <Modal show={showModal} onHideModal={onHideModal}><TodoForm onHideModal={onHideModal}></TodoForm></Modal>
+            </div>
+        </Provider>
+
+    )
+
+}
+
+
+
+
+
+
+export default app
+/* 
     useEffect(() => {
         let savedItems = JSON.parse(localStorage.getItem(SAVED_ITEMS))
 
@@ -23,18 +56,18 @@ function Todo() {
 
     useEffect(() => {
         localStorage.setItem(SAVED_ITEMS, JSON.stringify(items))
-    }, [items])
+    }, [items]) */
 
 
 
-    function onAddItem(text) {
+  /*   function onAddItem(text) {
         let it = new Item(text)
         let savedItems = JSON.parse(localStorage.getItem(SAVED_ITEMS))
 
 
-        if(savedItems.length !== 0 ){
-            let lasItemLocalStorage = savedItems[savedItems.length -1]
-            it.id = lasItemLocalStorage.id+1
+        if (savedItems.length !== 0) {
+            let lasItemLocalStorage = savedItems[savedItems.length - 1]
+            it.id = lasItemLocalStorage.id + 1
         }
 
         setItems([...items, it])
@@ -57,30 +90,4 @@ function Todo() {
         })
         setItems(updatedItems)
 
-    }
-
-    function onHideModal(e) {
-        setShowModal(false)
-    }
-
-
-    return (
-        <div className="container">
-            <header className="header">
-                <h1>Todo</h1> 
-                <button className="add-button" onClick={() => setShowModal(true)}>+</button>
-            </header>
-            <List onItemDeleted={onItemDeleted} onDone={onDone} items={items}></List>
-            <Modal show={showModal} onHideModal={onHideModal}><TodoForm onAddItem={onAddItem}></TodoForm></Modal>
-        </div>
-
-    )
-
-}
-
-
-
-
-
-
-export default Todo
+    } */

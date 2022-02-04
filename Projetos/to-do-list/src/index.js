@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './Todo';
+import App from './app';
 import './ToDo.css';
 
 ReactDOM.render(

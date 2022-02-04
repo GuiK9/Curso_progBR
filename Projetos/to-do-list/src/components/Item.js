@@ -1,8 +1,8 @@
 class Item {
 
 
-    constructor(text){
-        this.id = 0
+    constructor(text, lastId){
+        this.id = 0 + lastId
         this.text = text
         this.done = false
     }
