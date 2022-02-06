@@ -18,7 +18,6 @@ function TodoForm(props) {
         event.preventDefault()
 
         if (text) {
-            /*setItems([...items, text])*/
             dispatch(addItem(text))
             setText("")
             props.onHideModal()
@@ -27,8 +26,8 @@ function TodoForm(props) {
     }
     return (
         <form action="#">
-            <input onChange={handleChange} type="text" value={text}></input>
-            <button onClick={addItemEvent}>Add</button>
+            <input onChange={handleChange} type="text" value={text} id='inputNewData'></input>
+            <button onClick={addItemEvent} >Add</button>
         </form>
 
     )
