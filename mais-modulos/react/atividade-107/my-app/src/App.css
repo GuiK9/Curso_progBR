@@ -34,7 +34,12 @@ a{
   align-items: center;
 }
 
+.link{
+  color: gray;
+}
+
 .App {
   text-align: center;
 }
+
 
