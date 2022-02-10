@@ -13,6 +13,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import loginReducer from './reducer/loginReducer'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
+import PrivateRoute from './components/PrivateRoute'
 
 const store = createStore(loginReducer)
 
@@ -25,10 +26,10 @@ function App() {
         <div className='App'>
           <Nav />
           <Routes>
-            <Route path='/sobre' element={<Sobre />} />
-            <Route path='/aulas' element={<Aulas />} />
-            <Route path="/aulas/:id" element={<Aula />} />
             <Route path='/' element={<Home />} />
+            <Route path='/sobre' element={<Sobre />} />
+            <Route path='/aulas' element={<PrivateRoute><Aulas /></PrivateRoute>} />
+            <Route path="/aulas/:id" element={<Aula />} />
             <Route path='/assistir' element={<Assistir />} />
             <Route path='*' element={
               <div className="page">
