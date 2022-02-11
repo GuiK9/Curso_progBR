@@ -7,7 +7,7 @@ export default function Nav() {
         <div className="nav">
             <h1>GuiTec</h1>
             <ul className="nav-links">
-                <li><AuthButton></AuthButton></li>
+                <li><AuthButton/></li>
                 <li><Link to="/aulas">Aulas</Link></li>
                 <li><Link to="/sobre">Sobre</Link></li>
             </ul>

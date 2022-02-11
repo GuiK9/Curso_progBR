@@ -10,7 +10,7 @@ export default function PrivateRoute({ children }) {
 
     useEffect(()=>{
         if(!isLogged){
-            return navigate('/')
+            return navigate('/negado')
         }
     }, [])
 
