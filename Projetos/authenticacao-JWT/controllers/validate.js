@@ -1,6 +1,5 @@
 const Joi = require('@hapi/joi')
 const joi = require('@hapi/joi')
-const { schema } = require('../models/User')
 
 const registerValidate = (data) => {
     const schema = joi.object({
